@@ -5,14 +5,14 @@ import (
 	"time"
 )
 
-type Selection struct{}
+type Insert struct{}
 
-func NewSelection() *Selection {
-	return &Selection{}
+func NewInsert() *Insert {
+	return &Insert{}
 }
 
-func (s *Selection) Sort() error {
-	log.Println("selection sort start...")
+func (i *Insert) Sort() error {
+	log.Println("Insert sort start...")
 	start := time.Now()
 
 	for i := 0; i < gDataLength; i++ {
@@ -27,12 +27,12 @@ func (s *Selection) Sort() error {
 			exchange(i, flag)
 		}
 	}
-	log.Println("selection sort done...")
+	log.Println("Insert sort done...")
 	log.Printf("cost time: %v", time.Now().Sub(start))
 	return nil
 }
 
-func (s *Selection) IsSorted() bool {
+func (i *Insert) IsSorted() bool {
 	for i := 0; i < gDataLength-1; i++ {
 		if gRawData[i] >= gRawData[i+1] {
 			return false
@@ -41,7 +41,7 @@ func (s *Selection) IsSorted() bool {
 	return true
 }
 
-func (s *Selection) Show(limit int) {
+func (i *Insert) Show(limit int) {
 	log.Printf("order by from small to large,only show first %d", limit)
 	for i := 0; i < limit; i++ {
 		log.Println(gRawData[i])
