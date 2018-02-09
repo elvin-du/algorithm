@@ -10,16 +10,13 @@ func init() {
 }
 
 func main() {
+	sort.LoadRawData()
+
 	var sorter sort.Sorter
 
 	sorter = sort.NewSelection()
 
-	err := sorter.ReadRawData()
-	if nil != err {
-		log.Fatalln(err)
-	}
-
-	err = sorter.Sort()
+	err := sorter.Sort()
 	if nil != err {
 		log.Fatalln(err)
 	}
