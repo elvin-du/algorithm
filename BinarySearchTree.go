@@ -1,4 +1,4 @@
-```
+
 package main
 
 import (
@@ -107,6 +107,3 @@ type Node struct {
 	Key   int32
 	Value interface{}
 }
-
-
-```
