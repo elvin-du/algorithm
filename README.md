@@ -1,8 +1,12 @@
 ## algorithm in golang
-* [搜索二叉树](https://github.com/elvin-du/algorithm/edit/master/BinarySearchTree.go)
+* [搜索二叉树](./BinarySearchTree.go)
 * [冒泡排序](./BubbleSort.go)
+* [双向链表](./DoubleLinkedList.go)
+* [队列](./Queue.go)
+* [二叉树反转&广度遍历](./BinaryTreeReverseAndBreadthFirstSearch.go)
+
 
 ## algorithm in rust
 
-* [队列](https://github.com/elvin-du/algorithm/blob/master/queue.rs)
+* [队列](./queue.rs)
 * [链表]()
