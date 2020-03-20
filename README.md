@@ -4,6 +4,10 @@
 * [双向链表](./DoubleLinkedList.go)
 * [队列](./Queue.go)
 * [二叉树反转&广度遍历](./BinaryTreeReverseAndBreadthFirstSearch.go)
+* [散列表](./hashmap.go)
+* [栈](./stack.go)
+
+
 
 
 ## algorithm in rust
