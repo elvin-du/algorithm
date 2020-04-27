@@ -1,3 +1,6 @@
+package main
+
+import "log"
 
 type Queue struct {
 	Front *QueueNode

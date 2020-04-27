@@ -1,2 +1,3 @@
 ./cmd/sort
 ./cmd/make_raw_sort_test_data
+./idea
