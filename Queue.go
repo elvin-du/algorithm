@@ -2,6 +2,17 @@ package main
 
 import "log"
 
+func Go_Queue() {
+	q := NewQueue()
+	q.PushBack(NewTreeNode(1))
+	q.PushBack(NewTreeNode(2))
+	q.PushBack(NewTreeNode(3))
+	q.Println()
+	q.PopFront()
+	q.PushBack(NewTreeNode(4))
+	q.Println()
+}
+
 type Queue struct {
 	Front *QueueNode
 	Rear  *QueueNode

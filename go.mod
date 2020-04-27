@@ -1,8 +1,5 @@
-module algorithm
+module demo
 
-go 1.14
+go 1.13
 
-require (
-	github.com/go-errors/errors v1.0.1
-	github.com/syndtr/goleveldb v1.0.0
-)
+require github.com/samuel/go-zookeeper v0.0.0-20190923202752-2cc03de413da
